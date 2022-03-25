@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net5.0;net6.0</TargetFrameworks>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -14,7 +14,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>OpenApi.Extensions.png</PackageIcon>
     <RepositoryUrl>https://github.com/mikaeldui/openapi-dotnet-extensions</RepositoryUrl>
-    <PackageTags></PackageTags>
+    <PackageTags>OpenAPI; Extensions; Swagger</PackageTags>
     <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
     <AssemblyName>MikaelDui.OpenApi.Extensions</AssemblyName>
   </PropertyGroup>
@@ -28,6 +28,10 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.OpenApi" Version="1.2.3" />
   </ItemGroup>
 
 </Project>
